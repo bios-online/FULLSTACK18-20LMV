@@ -29,9 +29,7 @@ también se puede realizar todo en una sola linea:
 ### Primitivos
 
 - **string**: Son cadenas de caracteres o texto. Siempre deben estar
-  envueltos en comillas `""` o comillas simples `''`.
-
-      - Ej: `"Hola mundo"` `"2"` `"A"`
+  envueltos en comillas `""` o comillas simples `''`. Ej: `"Hola mundo"` `"2"` `"A"`
 
 - **numbers**: Son valores numéricos que pueden ser enteros o decimales tanto positivos como negativos.
 

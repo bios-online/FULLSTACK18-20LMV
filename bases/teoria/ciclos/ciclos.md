@@ -16,7 +16,7 @@ Para afrontar estas situaciones existen los ciclos que me permiten ejecutar el c
 
 ## Ciclo `for`
 
-Utiliza de la palabra reservada `for` y se usa de esta manera:
+Utiliza la palabra reservada `for` y se usa de esta manera:
 
 ```js
 /*

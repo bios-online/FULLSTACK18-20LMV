@@ -87,11 +87,12 @@ console.log("Notación corchete:", datosPersonales["direccion"]["barrio"])   // 
 console.log("Ambas:", datosPersonales["direccion"].barrio)      // ambas se pueden combinar
 
 //Encadenamiendo opcional - opcional chaining (?.)
+
 // console.log(datosPersonales.ciudad.barrio)    // Esto nos generará un error
 console.log(datosPersonales.ciudad?.avenida)     // al usar ?. preguntamos antes de intentar acceder a una propiedad
-                                                 // en caso de no existir devuelve undefined
+                                                 
 
-// ------------------------- ARRAYS ------------------------------------
+// ------------------------------------- ARRAYS -----------------------------------------------------
 
 // Array vacío
 let hobbies2 = []
@@ -100,7 +101,6 @@ let hobbies2 = []
 let hobbies = ['Videojuegos', 'Anime']
 console.log(hobbies)
 
-//----------------------------------------------------------------------------
 
 // Acceder a un elemento
 console.log(hobbies[0])     // Accedemos al primer elemento

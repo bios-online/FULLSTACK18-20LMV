@@ -1,5 +1,14 @@
 # Ciclos o Bucles
 
+## Contenido
+
+- [Ciclo for](#id1)
+- [Ciclo while y do while](#id2)
+- [Ciclo for of](#id3)
+- [Ciclo for in](#id4)
+
+---
+
 En ocasiones podemos tener la necesidad de repetir una misma acción varias veces, por ejemplo si quisiera imprimir cinco veces la palabra "Miau" haría algo como lo siguiente:
 
 ```js
@@ -14,7 +23,7 @@ Puede ser que esto solucione nuestro problema a corto plazo, pero ¿que pasaría
 
 Para afrontar estas situaciones existen los ciclos que me permiten ejecutar el código tantas veces como lo necesitemos.
 
-## Ciclo `for`
+## Ciclo `for`<a name="id1"></a>
 
 Utiliza la palabra reservada `for` y se usa de esta manera:
 
@@ -74,11 +83,39 @@ Veamos paso a paso el código anterior:
 11. Valida `count < 3`, en este caso `count` es 3, por lo que `3 < 3` es `false`
 12. Termina el ciclo
 
-## Ciclo `for of`
+## Ciclo `while` y `do while` <a name="id2"></a>
+
+```js
+while (condicion) {
+  // código
+}
+```
+
+Esta sentencia nos permite crear un ciclo que se repetirá tantas veces como la condición sea verdadera, por ejemplo:
+
+```js
+let i = 0
+while (i < 3) {
+  console.log(i)
+  i++
+}
+```
+
+El ciclo se ejecutará hasta que la variable `i` tenga el valor de 3. Podemos notar como en el cuerpo del ciclo imprimimos el valor de `i` e incrementamos su valor una unidad. Si no hicieramos este incremento la condición de `i < 3` nunca sería `false` haciendo que el ciclo se repita infinitamente.
+
+## Ciclo `for of`<a name="id3"></a>
 
 > Si no sabes lo que es un `Array` primero lee la sección introductoria de `tipos_de_dato`
 
 Esta declaración crea un bucle que se repite dado un Array (o un `Iterable`) el cual se ejecutará para cada valor del Array (o `Iterable`). Se escribe de la siguiente manera:
+
+```js
+for (variable of array) {
+  // cuerpo del ciclo
+}
+```
+
+Veamos un ejemplo:
 
 ```js
 let lista = ["A", "B", "C"]
@@ -116,6 +153,61 @@ El bucle se encarga directamente de iterar por cada elemento en la lista y nos d
 1. El bucle continua a la posición 2 del array
 2. Asigna a la variable el valor en la posición 2, en este caso `item` tendrá el valor de "C"
 3. Imprime en consola la variable `item`
+4. Termina el ciclo
+
+## Ciclo `for in` <a name="id4"></a>
+
+> Si no sabes lo que es un `Objeto` primero lee la sección introductoria de `tipos_de_dato`
+
+Esta declaración crea un bucle que se repite dado un objeto el cual se ejecutará para cada propiedad del objeto. Se escribe de la siguiente manera:
+
+```js
+for (let variable in objeto) {
+  // cuerpo del ciclo
+}
+```
+
+Veamos un ejemplo:
+
+```js
+// Definimos un objeto con algunas propiedades
+let persona = {
+  nombre: "Juan",
+  edad: 24,
+  ciudad: "Medellín",
+}
+
+// Iteramos sobre las propiedades del objeto usando for...in
+for (let propiedad in persona) {
+  console.log(propiedad)
+}
+```
+
+El bucle se encarga directamente de iterar por cada propiedad en el objeto y nos dará acceso a una variable (en este caso tiene el nombre de `propiedad` pero puedes ponerle cualquier nombre) que tendrá como valor el nombre de la propiedad de acuerdo a la iteración. veamos paso a paso:
+
+> Separaremos cada iteración con una linea
+
+#### Primera iteración
+
+1. El bucle inicia con la primera key del objeto
+2. Asigna a la variable el valor de la key, en este caso `propiedad` tendrá el valor de "nombre"
+3. Imprime en consola `nombre`
+
+---
+
+#### Segunda iteración
+
+1. El bucle continua con la primera segunda key del objeto
+2. Asigna a la variable el valor de la key, en este caso `propiedad` tendrá el valor de "edad"
+3. Imprime en consola la variable `edad`
+
+---
+
+#### Tercera iteración
+
+1. El bucle continua con la primera tercera key del objeto
+2. Asigna a la variable el valor de la key, en este caso `propiedad` tendrá el valor de "ciudad"
+3. Imprime en consola la variable `ciudad`
 4. Termina el ciclo
 
 > TO BE CONTINUE

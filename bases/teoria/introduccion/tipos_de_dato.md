@@ -1,6 +1,14 @@
-## Tipos de dato:
+# Tipos de dato
 
-### Primitivos
+## Contenido
+
+- [Primitivos](#id1)
+- [Objetos](#id2)
+- [Arrays](#id3)
+
+---
+
+### Primitivos<a name="id1"></a>
 
 - **string**: Son cadenas de caracteres o texto. Siempre deben estar
   envueltos en comillas `""` o comillas simples `''`. Ej: `"Hola mundo"` `"2"` `"A"`
@@ -18,7 +26,7 @@
 - **Symbol**: Se utiliza para crear identificadores únicos
 - **BigInt**: Permite representar de forma segura valores enteros mayores que `(2 ^ 53-1)` y - `(2 ^ 53-1)`
 
-### Objetos
+### Objetos<a name="id2"></a>
 
 A grandes rasgos un objeto es una estructura que nos permite agrupar una serie de propiedades simples o complejas escritas como `clave:valor`.
 
@@ -152,7 +160,7 @@ if ("direccion" in usuario) {
 
 > TO BE CONTINUE...
 
-### Arrays
+### Arrays<a name="id3"></a>
 
 En algunas ocasiones necesitamos listar de forma ordenada un conjunto de elemento. Por ejemplo en la lista de la compra donde tengo elementos como "carne", "leche", "huevos". Para eso existe una estructura conocida como `Array`
 

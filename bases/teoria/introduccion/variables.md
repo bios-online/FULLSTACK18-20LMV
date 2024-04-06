@@ -1,12 +1,4 @@
-# Introducción a Javascript 💛
-
-## ¿Que es Javascript?
-
-Es un lenguaje de programación creado para **"dar vida a las páginas web"**.
-
-Inicialmente fue creado como un lenguaje solamente para el navegador, pero ahora es usado también en muchos otros entornos.
-
-## Variables:
+# Variables
 
 La mayoría de veces necesitamos trabajar con información cuando estamos programando ya sea que necesitemos usar el nombre de un usuario, su edad, etc. Las variables no son mas que una _"caja con un nombre"_ para guardar datos.
 

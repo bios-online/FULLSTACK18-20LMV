@@ -1,4 +1,15 @@
-## Ejercicios
+# Ejercicios
+
+## Contenido
+
+- [Básicos](#id1)
+- [Arrays](#id2)
+- [Objetos](#id3)
+- [Ciclos](#id4)
+
+---
+
+## Básicos<a name="id1"></a>
 
 ### Suma de dos números:
 
@@ -9,8 +20,8 @@ Escribe una función llamada `sumar` que tome dos números como parámetros y re
 
 // Aquí escribes la función ...
 
-let resultado1 = suma(2, 3);
-console.log(resultado1); // Debe imprimir en consola: 5
+let resultado1 = suma(2, 3)
+console.log(resultado1) // Debe imprimir en consola: 5
 ```
 
 ### Número par o impar:
@@ -22,8 +33,8 @@ Escribe una función llamada `parOImpar` que tome un número como parámetro y r
 
 // Aquí escribes la función ...
 
-let resultado2 = parOImpar(2);
-console.log(resultado2); // Debe imprimir en consola "Par"
+let resultado2 = parOImpar(2)
+console.log(resultado2) // Debe imprimir en consola "Par"
 ```
 
 > Pista: módulo
@@ -37,7 +48,7 @@ Escribe una función llamada `determinarDia` que tome un número como parámetro
 
 // Aquí escribes la función ...
 
-determinarDia(2); // Debe imprimir en consola: "Martes"
+determinarDia(2) // Debe imprimir en consola: "Martes"
 ```
 
 ### Calificaciones:
@@ -59,7 +70,7 @@ en caso de no pertenecer a la escala imprimir `La calificación debe ser entre 0
 
 // Aquí escribes la función ...
 
-calificar(82); // Debe imprimir en consola: "E"
+calificar(82) // Debe imprimir en consola: "E"
 ```
 
 ### Conversión de temperatura:
@@ -71,12 +82,104 @@ Escribe una función llamada `convertirTemperatura` que tome tres parámetros: l
 
 // Aquí escribes la función ...
 
-let valorFahrenheit = convertirTemperatura(20, "C", "F"); // Debe convertir 20° Celsius a Fahrenheit
-console.log(valorFahrenheit); //  Debe imprimir en consola: 68F
+let valorFahrenheit = convertirTemperatura(20, "C", "F") // Debe convertir 20° Celsius a Fahrenheit
+console.log(valorFahrenheit) //  Debe imprimir en consola: 68F
 
-let valorCelsius = convertirTemperatura(89.6, "F", "C"); // Debe convertir 89.6° Fahrenheit a Celsius
-console.log(valorCelsius); //  Debe imprimir en consola: 32C
+let valorCelsius = convertirTemperatura(89.6, "F", "C") // Debe convertir 89.6° Fahrenheit a Celsius
+console.log(valorCelsius) //  Debe imprimir en consola: 32C
 
-let sinConversion = convertirTemperatura(100, "F", "F"); // No debe realizar conversión
-console.log(sinConversion); //  Debe imprimir en consola: 100F
+let sinConversion = convertirTemperatura(100, "F", "F") // No debe realizar conversión
+console.log(sinConversion) //  Debe imprimir en consola: 100F
 ```
+
+## Arrays<a name="id2"></a>
+
+### Lista de hobbies:
+
+Crea una variable con un array vacío, luego agrega tus hobbies utilizando el método correspondiente.
+
+### Mis activiadades:
+
+Dada esta lista:
+
+```js
+let actividades = [
+  "Leer",
+  "Pintar",
+  "Jugar videojuegos",
+  "Hacer deporte",
+  "Cocinar",
+  "Ver películas",
+  "Hacer senderismo",
+  "Tocar un instrumento musical",
+  "Aprender un nuevo idioma",
+  "Viajar",
+  "Fotografía",
+  "Jardinería",
+  "Programar",
+  "Escribir",
+]
+```
+
+sigue las siguientes instrucciones:
+
+    1. Imprime la lista
+    2. Imprime el primer elemento de la lista
+    3. Elimina el ultimo elemento de la lista
+    4. Agrega "Bailar" al final de la lista
+    5. Elimina el primer elemento de la lista
+    6. Agrega "Mi primera actividad" al inicio de la lista
+    7. Imprime la cantidad de elemento de la lista
+    8. Imprime el quinto elemento de la lista
+    9. Imprime el ultimo elemento de la lista
+
+> TO BE CONTINUE
+
+## Objetos<a name="id3"></a>
+
+### Información personal:
+
+Crea una variable con un objeto que tenga las siguientes propieadades con tus datos:
+
+- nombre
+- apellido
+- edad
+- ciudad
+- estadoCivil
+- intereses
+- ocupacion
+
+luego imprime en consola en forma de tabla
+
+### Corrección de información
+
+Dado un objeto usuario:
+
+```js
+let usuario = {
+  nombre: "María",
+  apellido: "González",
+  edad: 28,
+  datosContacto: {
+    ciudad: "New York",
+    telefono: "+1 333 22 22 11",
+  },
+}
+```
+
+Realiza las siguientes instrucciones:
+
+1. Imprime el nombre
+2. Imprime la ciudad
+3. agrega la propiedad "id" con el valor de: 12345
+4. agrega la propiedad "zona" con el valor "C1-34" en los datos de contacto
+5. Modifica el valor de la propiedad "edad" por el valor 30
+6. Elimina la propiedad "apellido"
+7. Crea una función que valide si existe la propiedad "intereses". En caso de no existir imprime "No existe la propiedad intereses". si existe la propieadad imprime su valor.
+8. llama la función creada en el paso 7
+9. Crea la propiedad intereses con el array ["Cocinar", "Estudiar", "Viajar"]
+10. llama la función creada en el paso 7
+
+> TO BE CONTINUE
+
+## Ciclos<a name="id4"></a>

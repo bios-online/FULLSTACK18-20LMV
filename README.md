@@ -7,6 +7,7 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
 - Bases
   - Teoria
     - Introducción
+      - [¿Qué es javascript?](bases/teoria/introduccion/que-es-javascript.md)
       - Variables
       - Operadores
       - Tipos de dato

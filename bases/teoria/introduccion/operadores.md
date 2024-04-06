@@ -1,6 +1,15 @@
-## Operadores
+# Operadores
 
-### Numéricos
+## Contenido
+
+- [Numéricos](#id1)
+- [Numéricos de asignación](#id2)
+- [Booleanos](#id3)
+- [Comparación](#id4)
+
+---
+
+### Numéricos<a name="id1"></a>
 
 | Nombre           | Símbolo | Ejemplo  | Resultado |
 | ---------------- | ------- | -------- | --------- |
@@ -21,7 +30,7 @@ las operaciones matemáticas se evalúan siguiendo ciertas reglas de precedencia
 
 4.  **Suma** `+` y **Resta** `-`: Estas operaciones también tienen la misma precedencia y se evalúan de izquierda a derecha.
 
-### Numéricos de asignación
+### Numéricos de asignación<a name="id2"></a>
 
 Nos permite operar y asignar el valor al mismo tiempo. Supongamos que tenemos la variable: `let numero = 10`:
 
@@ -35,7 +44,7 @@ Nos permite operar y asignar el valor al mismo tiempo. Supongamos que tenemos la
 | División       | /=      | numero /= 4  | 4                             |
 | División       | %=      | numero %= 2  | 0                             |
 
-### Booleanos
+### Booleanos<a name="id3"></a>
 
 **Operador de negación lógica** (`!`): Este operador niega un valor booleano.
 
@@ -62,7 +71,7 @@ Nos permite operar y asignar el valor al mismo tiempo. Supongamos que tenemos la
 | false \|\| true  | true      |
 | false \|\| false | false     |
 
-### Comparación
+### Comparación<a name="id4"></a>
 
 | Nombre               | Símbolo | Ejemplo          | Resultado |
 | -------------------- | ------- | ---------------- | --------- |

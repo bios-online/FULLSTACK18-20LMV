@@ -5,7 +5,7 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
 ## Tabla de Contenido
 
 - Bases
-  - Teoria
+  - Teoría
     - Introducción
       - [¿Qué es javascript?](bases/teoria/introduccion/que-es-javascript.md)
       - [Variables](bases/teoria/introduccion/variables.md)

@@ -68,13 +68,13 @@ for(let i = 0; i < 5; i++){
 for(let i = 0; i < 10; i++){
   if(i%2 === 0){
       continue         //si se ejecuta la sentencia "continue" el ciclo no continuará
-  }                    // ejecutando el codigo que contiene el for y pasará a la otra iteración
+  }                    // ejecutando el código que contiene el for y pasará a la otra iteración
   console.log(i)
-  // mas codigo
-  // mas codigo
-  // mas codigo
-  // mas codigo
-  // mas codigo
+  // mas código
+  // mas código
+  // mas código
+  // mas código
+  // mas código
 }
 
 // ------------------------ WHILE Y DO WHILE ----------------------------------
@@ -83,7 +83,7 @@ for(let i = 0; i < 10; i++){
 let i = 7
 while(i !== 0){
     console.log('iterando', i)
-    i--                           //!ES IMPORTANTE ASEGURARNOS QUE EL CICLO EN ALGUN MOMENTO TERMINE
+    i--                           //!ES IMPORTANTE ASEGURARNOS QUE EL CICLO EN ALGÚN MOMENTO TERMINE
 }
 
 // Ejecutará por lo menos una sola vez el código interno
@@ -145,7 +145,7 @@ let objeto = {
     apellido: 'serna'
 }
 
-// Puedo interar cada "key" de un objeto
+// Puedo iterar cada "key" de un objeto
 for(let atributo in objeto){
     console.log(atributo + ':', objeto[atributo])
 }

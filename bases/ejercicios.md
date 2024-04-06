@@ -264,7 +264,7 @@ Crea una variable con la siguiente lista ["Huevos", "Leche", "Carne"] y utiliza 
 
 ### Filtrar elementos
 
-utiliza un ciclo `for in` para filtrar los números pares dado un array de números y almacena los resultados en un nuevo array. Imprime el resultado del nuevo array.
+utiliza un ciclo `for of` para filtrar los números pares dado un array de números y almacena los resultados en un nuevo array. Imprime el resultado del nuevo array.
 
 ```js
 //EJEMPLO

@@ -6,6 +6,7 @@
 - [Ciclo while y do while](#id2)
 - [Ciclo for of](#id3)
 - [Ciclo for in](#id4)
+- [break y continue](#id5)
 
 ---
 
@@ -101,7 +102,7 @@ while (i < 3) {
 }
 ```
 
-El ciclo se ejecutará hasta que la variable `i` tenga el valor de 3. Podemos notar como en el cuerpo del ciclo imprimimos el valor de `i` e incrementamos su valor una unidad. Si no hicieramos este incremento la condición de `i < 3` nunca sería `false` haciendo que el ciclo se repita infinitamente.
+El ciclo se ejecutará hasta que la variable `i` tenga el valor de 3. Podemos notar como en el cuerpo del ciclo imprimimos el valor de `i` e incrementamos su valor una unidad. Si no hiciéramos este incremento la condición de `i < 3` nunca sería `false` haciendo que el ciclo se repita infinitamente.
 
 ## Ciclo `for of`<a name="id3"></a>
 
@@ -209,5 +210,42 @@ El bucle se encarga directamente de iterar por cada propiedad en el objeto y nos
 2. Asigna a la variable el valor de la key, en este caso `propiedad` tendrá el valor de "ciudad"
 3. Imprime en consola la variable `ciudad`
 4. Termina el ciclo
+
+## `break` y `continue`<a name="id5"></a>
+
+### Detener el ciclo:
+
+Podemos utilizar la palabra reservada `break` para forzar detener los ciclos en cualquier momento de su iteración.
+
+Por ejemplo, supongamos que tenemos un ciclo que imprime números del 1 al 100 pero queremos interrumpir su ejecución cuando vaya a imprimir el numero 50:
+
+```js
+for (let i = 1; i <= 100; i++) {
+  if (i === 50) {
+    break // estamos haciendo una condición para que cuando la variable i sea 50 termine el ciclo
+  }
+  console.log(i)
+}
+```
+
+> `break` funciona para todos los ciclos menos el forEach
+
+### Continuar la siguiente iteración:
+
+Si en lugar de detener por completo el ciclo simplemente queremos saltarnos la ejecución de la iteración actual y seguir con la siguiente lo hacemos con la palabra reservada `continue`.
+
+Por ejemplo, tenemos el siguiente ciclo que imprime números pares y código adicional:
+
+```js
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 !== 0) {
+    continue // Estamos haciendo una condición para que cuando la variable i no sea par saltemos a la siguiente iteración
+  }
+  console.log(i)
+  console.log("Soy par")
+}
+```
+
+> `continue` funciona para todos los ciclos menos el forEach
 
 > TO BE CONTINUE

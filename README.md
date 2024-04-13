@@ -11,6 +11,7 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
       - [Variables](bases/teoria/introduccion/variables.md)
       - [Operadores](bases/teoria/introduccion/operadores.md)
       - [Tipos de dato](bases/teoria/introduccion/tipos_de_dato.md)
+      - [Manejo de errores](bases/teoria/introduccion/manejo-de-errores.md)
     - [Condicionales](bases/teoria/condicionales/condicionales.md)
     - [Funciones](bases/teoria/funciones/funciones.md)
     - [Ciclos](bases/teoria/ciclos/ciclos.md)

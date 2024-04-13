@@ -1,7 +1,16 @@
 # Funciones
 
+## Contenido
+
+- [Declaración de función](#id1)
+  - [Return](#id2)
+  - [Callbacks](#id3)
+- [Expresión de función](#id4)
+- [Funciones flecha](#id5)
+
 Una función en JavaScript es un bloque de código que agrupa una serie de instrucciones para realizar una tarea específica pero no es ejecutado de inmediato.
 
+<a name="id1"></a>
 Estas se definen utilizando la palabra clave `function`, seguida de un **nombre opcional** para la función, paréntesis que pueden contener parámetros y un bloque de código que contiene las instrucciones que realiza la función.
 
 ```js
@@ -53,7 +62,7 @@ function saludar(nombre) {
 saludar("Julian") // Output: ¡Hola! Julian
 ```
 
-### Return
+### Return<a name="id2"></a>
 
 Una función puede devolver un resultado utilizando la palabra clave `return`, lo que hace que la función finalice y devuelva el valor especificado.
 
@@ -92,7 +101,9 @@ Las variables globales son visibles desde cualquier función (a menos que se les
 
 > Para que el código sea limpio y fácil de entender, se recomienda utilizar principalmente variables y parámetros locales en la función, no variables externas.
 
-## Expresión de función
+### Callbacks<a name="id3"></a>
+
+## Expresión de función<a name="id4"></a>
 
 Las funciones también se pueden escribir en forma de expresión, donde la función puede ser anónima (no tiene un nombre definido) por ejemplo:
 
@@ -121,6 +132,52 @@ function operacion(fn, num1, num2) {
 }
 
 operacion(sumar, 5, 4)
+```
+
+## Funciones flecha<a name="id5"></a>
+
+Una función flecha es una expresión de función alternativa mas compacta aunque con mas limitaciones. Se utiliza mayormente cuando necesitamos pasar un callback a otra función. se escribe de la siguiente manera.
+
+```js
+// (params) => cuerpo de la función
+let miFuncion = (parametro) => console.log(parametro)
+```
+
+Podemos realizar la comparación de una expresión de función tradicional con las funciones flecha:
+
+```js
+// Función tradicional
+function (a){
+  return a + 100;
+}
+
+// Desglose de la función flecha
+
+// 1. Elimina la palabra "function" y coloca la flecha entre el argumento y el corchete de apertura.
+(a) => {
+  return a + 100;
+}
+
+// 2. Quita los corchetes del cuerpo y la palabra "return" — el return está implícito.
+(a) => a + 100;
+
+// 3. Suprime los paréntesis de los argumentos
+a => a + 100;
+```
+
+En algunas situaciones podemos requerir los paréntesis, por ejemplo si necesitamos mas de un parámetro
+
+```js
+(paramA, paramB) => paramA + paramB
+```
+
+En caso de querer escribir un código mas extenso debemos volver a utilizar las llaves y el return (en caso de querer retornar un valor):
+
+```js
+(paramA, paramB) => {
+  console.log("Este es un ejemplo de una función extensa")
+  return paramA + paramB
+}
 ```
 
 > TO BE CONTINUE

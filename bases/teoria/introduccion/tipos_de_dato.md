@@ -5,6 +5,8 @@
 - [Primitivos](#id1)
 - [Objetos](#id2)
 - [Arrays](#id3)
+  - [Métodos y propiedades](#id4)
+- [Propiedades en los primitivos](#id5)
 
 ---
 
@@ -222,7 +224,7 @@ console.log(typeof lista) // nos dice que es un "object"
 
 Gracias a esto, el lenguaje nos provee de propiedades especiales para poder manipular nuestras listas.
 
-#### Métodos y propiedades de los Arrays
+#### Métodos y propiedades de los Arrays<a name="id4"></a>
 
 - **length:** Permite obtener la cantidad de elementos de la lista:
 
@@ -320,10 +322,7 @@ console.log(subLista) // Imprime: [ 3, 4, 5, 6 ]
 Otros métodos requieren el paso de una función como parámetro. En los siguientes ejemplos usaremos funciones flecha ya que son mas cortas de escribir.
 
 > [!NOTE]
-> Si no sabes que es una `función flecha` revisa primero la sección de `funciones`.
-
-> [!NOTE]
-> Si no estas familiarizado con el concepto de `callback` revisa primero la sección de `funciones`.
+> Si no sabes que es un `callback` y una `función flecha` revisa primero la sección de `funciones`.
 
 - **forEach:** Recibe una función como parámetro la cual será ejecutada una vez por cada elemento de la lista:
 
@@ -423,3 +422,95 @@ console.log(suma) // 55
 Existen muchos mas métodos que podemos encontrar en la documentación oficial del lenguaje [MDN Arrays](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 > TO BE CONTINUE...
+
+### Propiedades en los primitivos<a name="id5"></a>
+
+Aunque los tipos primitivos no son objetos, javascript nos permite acceder a ciertas propiedades especiales.
+
+#### Strings:
+
+- **length:** Permite saber el tamaño del string
+
+```js
+let texto = "Hola mundo"
+console.log(texto.length) // Imprime: 10
+```
+
+- **toLowerCase:** Retorna el string en minúscula sostenida pero no modifica el original
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.toLowerCase()) // Imprime: hola mundo
+```
+
+- **toUpperCase:** Retorna el string en mayúscula sostenida pero no modifica el original
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.toUpperCase()) // Imprime: HOLA MUNDO
+```
+
+- **includes:** Valida si existe una subcadena en el string
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.includes("Mundo")) // Imprime: true
+```
+
+- **startWith:** Valida si el string comienza por una subcadena determinada
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.startWith("Ho")) // Imprime: true
+```
+
+- **endWith:** Valida si el string finaliza por una subcadena determinada
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.endWith("ndo")) // Imprime: true
+```
+
+- **slice:** Extrae una sección de una cadena y devuelve una cadena nueva determinada
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.slice(2, 8)) // Imprime: "la Mun"
+```
+
+- **repeat:** Crea una nueva cadena de texto concatenando tantas veces el string como se indique como parámetro
+
+```js
+let texto = "Hola"
+console.log(texto.repeat(3)) // Imprime: "HolaHolaHola"
+```
+
+- **trim:** Elimina todos los espacios vacíos que haya al inicio y al final de una cadena
+
+```js
+let texto = "        Hola        "
+console.log(texto.trim()) // Imprime: "Hola"
+```
+
+- **split:** Divide la cadena de texto de acuerdo a un string dado por parámetro y retorna un Array con cada elemento dividido
+
+```js
+let texto = "Hola,Como,Estan"
+console.log(texto.split(",")) // Imprime: [ "Hola" ,"Como", "Estan" ]
+```
+
+- **replace:** Reemplaza la primera subcadena que encuentre en el string con el valor dado por parámetro
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.replace("o", "*")) // Imprime: "H*la Mundo"
+```
+
+- **replaceAll:** Reemplaza todas las subcadenas que encuentre en el string con el valor dado por parámetro
+
+```js
+let texto = "Hola Mundo"
+console.log(texto.replace("o", "*")) // Imprime: "H*la Mund*"
+```
+
+Existen muchos mas métodos que podemos encontrar en la documentación oficial del lenguaje [MDN Strings](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)

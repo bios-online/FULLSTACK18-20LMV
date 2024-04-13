@@ -106,6 +106,7 @@ El ciclo se ejecutará hasta que la variable `i` tenga el valor de 3. Podemos no
 
 ## Ciclo `for of`<a name="id3"></a>
 
+> [!NOTE]
 > Si no sabes lo que es un `Array` primero lee la sección introductoria de `tipos_de_dato`
 
 Esta declaración crea un bucle que se repite dado un Array (o un `Iterable`) el cual se ejecutará para cada valor del Array (o `Iterable`). Se escribe de la siguiente manera:
@@ -158,6 +159,7 @@ El bucle se encarga directamente de iterar por cada elemento en la lista y nos d
 
 ## Ciclo `for in` <a name="id4"></a>
 
+> [!NOTE]
 > Si no sabes lo que es un `Objeto` primero lee la sección introductoria de `tipos_de_dato`
 
 Esta declaración crea un bucle que se repite dado un objeto el cual se ejecutará para cada propiedad del objeto. Se escribe de la siguiente manera:

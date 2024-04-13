@@ -27,7 +27,7 @@ function funcionConParametros(parametro1) {
 }
 ```
 
-los parametros se pueden entender como "placeholders" los cuales aun no conocemos su valor, hasta que se haga el llamado a la función.
+los parametros se pueden entender como "placeholders" o variables las cuales aun no conocemos su valor, hasta que se haga el llamado a la función.
 
 Para utilizar o llamar la función debemos escribir su nombre y paréntesis los cuales tendrán tantos valores como parámetros se hayan definido.
 
@@ -91,5 +91,36 @@ Las variables definidas fuera de la función tienen un alcance o `Scope global` 
 Las variables globales son visibles desde cualquier función (a menos que se les superpongan variables locales con el mismo nombre).
 
 > Para que el código sea limpio y fácil de entender, se recomienda utilizar principalmente variables y parámetros locales en la función, no variables externas.
+
+## Expresión de función
+
+Las funciones también se pueden escribir en forma de expresión, donde la función puede ser anónima (no tiene un nombre definido) por ejemplo:
+
+```js
+let miFuncion = function () {
+  // Codigo de mi funcion
+}
+```
+
+cuando necesitemos utilizarla simplemente usamos el nombre de la variable a la que fue asignada y hacemos la invocación usando los paréntesis.
+
+```js
+miFuncion()
+```
+
+Esta forma de usar funciones es util cuando queremos pasar una función como argumento a otra. Por ejemplo:
+
+```js
+let sumar = function (a, b) {
+  return a + b
+}
+
+function operacion(fn, num1, num2) {
+  let resultado = fn(num1, num2)
+  console.log(resultado)
+}
+
+operacion(sumar, 5, 4)
+```
 
 > TO BE CONTINUE

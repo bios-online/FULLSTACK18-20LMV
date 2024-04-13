@@ -220,47 +220,55 @@ let lista = []
 console.log(typeof lista) // nos dice que es un "object"
 ```
 
-Gracias a esto, el lenguaje nos provee de propiedades especiales para poder manipular nuestras listas, por ejemplo:
+Gracias a esto, el lenguaje nos provee de propiedades especiales para poder manipular nuestras listas.
 
-- Obtener la cantidad de elementos de la lista:
+#### Métodos y propiedades de los Arrays
+
+- **length:** Permite obtener la cantidad de elementos de la lista:
 
 ```js
 let lista = [20, 30, 40, 50]
 console.log(lista.length) // Imprime: 4
 ```
 
-- Agregar un elemento al final de la lista:
+- **push:** Permite agregar un elemento al final de la lista:
 
 ```js
 lista.push(60)
 console.log(lista) // Imprime: [20, 30, 40, 50, 60]
 ```
 
-- Agregar un elemento al inicio de la lista:
+- **unshift:** Permite agregar un elemento al inicio de la lista:
 
 ```js
 lista.unshift(10)
 console.log(lista) // Imprime: [10, 20, 30, 40, 50, 60]
 ```
 
-- Eliminar el ultimo elemento de la lista:
+- **pop:** Eliminar el ultimo elemento de la lista:
 
 ```js
 lista.pop()
 console.log(lista) // Imprime: [10, 20, 30, 40, 50]
 ```
 
-- Eliminar el primer elemento de la lista:
+- **shift:** Permite eliminar el primer elemento de la lista:
 
 ```js
 lista.shift()
 console.log(lista) // Imprime: [20, 30, 40, 50]
 ```
 
-- Acceder al ultimo elemento de la lista:
+- **at:** Permite acceder al ultimo elemento de la lista:
 
 ```js
 console.log(lista.at(-1)) // Imprime: 50
 ```
+
+- **splice:** Permite eliminar o modificar uno o varios elementos en la lista:
+
+<!-- ```js
+console.log(lista.splice()) /
+``` -->
 
 > TO BE CONTINUE...

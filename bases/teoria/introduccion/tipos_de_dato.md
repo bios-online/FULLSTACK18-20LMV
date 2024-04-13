@@ -265,10 +265,161 @@ console.log(lista) // Imprime: [20, 30, 40, 50]
 console.log(lista.at(-1)) // Imprime: 50
 ```
 
-- **splice:** Permite eliminar o modificar uno o varios elementos en la lista:
+- **splice:** Permite eliminar o modificar uno o varios elementos en la lista dado un indice:
 
-<!-- ```js
-console.log(lista.splice()) /
-``` -->
+```js
+let lista = [1, 2, 3]
+console.log(lista.splice(1, 0, 4)) // Agrega en la posición 1 el numero 4
+console.log(lista.splice(2, 1, 34)) // Reemplaza el valor de la posición 2 por el numero 34
+```
+
+- **indexOf:** Permite obtener el indice del elemento dado:
+
+```js
+let lista = ["banana", "pera", "manzana"]
+console.log(lista.indexOf("pera")) // Imprime: 1
+```
+
+- **concat:** Permite juntar dos Arrays y me retorna un nuevo array:
+
+```js
+let lista = ["banana", "pera", "manzana"]
+let lista2 = ["mango"]
+console.log(lista.concat(lista2)) // Imprime: ["banana", "pera", "manzana", "mango"]
+```
+
+- **join:** Permite convertir el Array en una cadena de texto separando sus elementos por un delimitador pasado por parámetro:
+
+```js
+let lista = [2, 4, 6]
+console.log(lista.join("-")) // Imprime: "2-4-6"
+```
+
+- **reverse:** Permite invertir el orden de la lista:
+
+```js
+let lista = [3, 6, 9]
+console.log(lista.reverse()) // Imprime: [9, 6, 3]
+```
+
+- **includes:** Permite validar si existe un elemento en la lista:
+
+```js
+let lista = [3, 6, 9]
+console.log(lista.includes(6)) // Imprime: true
+```
+
+- **slice:** Permite crear una copia de una sección del array dado un indice de inicio y fin (no incluido) y la retornará como un nuevo array:
+
+```js
+let lista = [1, 2, 3, 4, 5, 6, 7, 8]
+let subLista = lista.slice(2, 6)
+console.log(subLista) // Imprime: [ 3, 4, 5, 6 ]
+```
+
+Otros métodos requieren el paso de una función como parámetro. En los siguientes ejemplos usaremos funciones flecha ya que son mas cortas de escribir.
+
+> [!NOTE]
+> Si no sabes que es una `función flecha` revisa primero la sección de `funciones`.
+
+> [!NOTE]
+> Si no estas familiarizado con el concepto de `callback` revisa primero la sección de `funciones`.
+
+- **forEach:** Recibe una función como parámetro la cual será ejecutada una vez por cada elemento de la lista:
+
+```js
+let lista = ["Manuel", "Carolina", "Alberto"]
+lista.forEach((nombre) => console.log("Hola " + nombre))
+
+/* 
+Imprime:
+Hola Manuel
+Hola Carolina
+Hola Alberto
+*/
+```
+
+- **map:** Recibe una función como parámetro y crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos:
+
+```js
+let lista = [1, 2, 3, 4]
+let nuevaLista = lista.map((numero) => numero ** 2)
+console.log(nuevaLista)
+// Imprime: [1, 4, 9, 16]
+```
+
+- **every:** Recibe una función como parámetro y valida si cada elemento del array cumple con una condición:
+
+```js
+let lista = [2, 4, 6, 8]
+let esPar = lista.every((numero) => numero % 2 === 0)
+console.log(esPar)
+// Imprime: true
+```
+
+- **some:** Recibe una función como parámetro y valida si al menos un elemento del array cumple con la condición dada:
+
+```js
+let lista = [3, 1, 5, 2, 7]
+let existeUnPar = lista.some((numero) => numero % 2 === 0)
+console.log(existeUnPar)
+// Imprime: true
+```
+
+- **find:** Recibe una función como parámetro y retorna el primer elemento del array que cumpla con la condición dada:
+
+```js
+let lista = [
+  { id: 1, nombre: "Gabriel" },
+  { id: 2, nombre: "Mariana" },
+  { id: 3, nombre: "Maria" },
+]
+let resultado = lista.find((elemento) => elemento.nombre === "Mariana")
+console.log(resultado)
+// Imprime: { id: 2, nombre: "Mariana" }
+```
+
+- **filter:** Recibe una función como parámetro y retorna un nuevo array con todos los elementos del array que cumpla con la condición dada:
+
+```js
+let lista = [
+  { id: 1, nombre: "Gabriel", estaCasado: false },
+  { id: 2, nombre: "Mariana", estaCasado: true },
+  { id: 3, nombre: "Maria", estaCasado: false },
+]
+let solteros = lista.filter((elemento) => !elemento.estaCasado)
+console.log(solteros)
+/* Imprime:
+[
+  { id: 1, nombre: 'Gabriel', estaCasado: false },
+  { id: 3, nombre: 'Maria', estaCasado: false }
+]
+*/
+```
+
+- **sort:** Ordena los elementos el array de acuerdo a su posición en la tabla `unicode`. Puede recibir una función que indique como debe ordenar los elementos, la cual comparará el elemento actual con el siguiente y dependiendo del resultado dado se ordenará uno antes que el otro:
+
+```js
+const frutas = ["guanabana", "manzanas", "bananas"]
+frutas.sort()
+console.log(frutas) // ['bananas', 'guanabana', 'manzanas']
+
+const numeros = [40, 1, 5, 200]
+numeros.sort((a, b) => a - b)
+console.log(numeros) // [ 1, 5, 40, 200 ]
+```
+
+- **reduce:** Recibe una función como primero parámetro y un valor inicial como segundo parámetro. Ejecuta una función por cada elemento y su resultado lo almacena para la siguiente iteración retornando al final un único valor
+
+```js
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const suma = numeros.reduce(
+  (acumulador, valorActual) => acumulador + valorActual,
+  0 // valor inicial
+)
+console.log(suma) // 55
+```
+
+Existen muchos mas métodos que podemos encontrar en la documentación oficial del lenguaje [MDN Arrays](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 > TO BE CONTINUE...

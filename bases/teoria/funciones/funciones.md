@@ -103,6 +103,25 @@ Las variables globales son visibles desde cualquier función (a menos que se les
 
 ### Callbacks<a name="id3"></a>
 
+Una función callback es una función que se pasa a otra función como parámetro, que luego se invoca dentro de la función principal para completar algún tipo acción.
+
+```js
+function saludar(nombre) {
+  console.log("Hola " + nombre);
+}
+
+function programa(callback) {
+  let nombre = "Martin"
+  callback(nombre);
+}
+
+programa(saludar);
+```
+
+A menudo se los callbacks se utilizan para continuar con la ejecución del código después de que se haya completado una operación.
+
+>TO BE CONTINUE
+
 ## Expresión de función<a name="id4"></a>
 
 Las funciones también se pueden escribir en forma de expresión, donde la función puede ser anónima (no tiene un nombre definido) por ejemplo:

@@ -6,10 +6,11 @@
 - [Arrays](#id2)
 - [Objetos](#id3)
 - [Ciclos](#id4)
+- [Métodos de los Arrays y Strings](#id5)
 
 ---
 
-## Básicos<a name="id1"></a>
+# Básicos<a name="id1"></a>
 
 ### Suma de dos números:
 
@@ -275,4 +276,131 @@ const numerosPares = []
 // Aquí haces tu for in
 
 console.log(numerosPares) // Debe imprimir [2,4,6,8,10]
+```
+
+## Métodos de los Arrays y Strings<a name="id5"></a>
+
+### Espacios en Blanco:
+
+Crea una función `removerEspacios` que reciba un string como parámetro y retorne el string sin espacios adicionales al principio y al final.
+
+```js
+let texto = "          Hola gente       "
+let resultado = removerEspacios(texto)
+console.log(resultado) // Imprime: Hola gente
+```
+
+### Longitud y Mayúsculas:
+
+Crea una función llamada `convertirMayusculaMinuscula` que reciba como parámetro una frase y la imprima en mayúsculas si su longitud es mayor que 10 o en minúscula si su longitud es menor o igual que 10.
+
+```js
+convertirMayusculaMinuscula("Hola mundo") // Imprime: hola mundo
+convertirMayusculaMinuscula("bienvenidos al curso") // Imprime: BIENVENIDOS AL CURSO
+```
+
+### Búsqueda y Reemplazo:
+
+Crea una función llamada `reemplazar` que reciba como parámetros una frase, una palabra específica y una palabra con la cual reemplazar. Reemplaza todas las palabras por la nueva e imprime la nueva frase, en caso de no existir al menos una palabra dentro de la frase, imprimir: "No se encuentran palabras a reemplazar"
+
+```js
+reemplazar("esta es la frase", "frase", "oracion") // Imprime: esta es la oracion
+reemplazar("esta es la frase", "nada", "oracion") // Imprime: No se encuentra palabras a reemplazar
+```
+
+### División y Concatenación:
+
+Crea una función `concatenar` que reciba por parámetro una string de palabras separadas por comas, luego conviértelas en un array y únelas de nuevo en una sola cadena separadas por guiones y retorna el valor.
+
+```js
+let palabras = "manzana,banana,naranja,piña"
+let resultado = concatenar(palabras)
+console.log(resultado) // Imprime: manzana-banana-naranja-piña
+```
+
+### Reversión:
+
+Crea una función `revertirString` que reciba un string como parámetro y lo retorne en forma inversa.
+
+```js
+let palabra = "reversion"
+let resultado = revertirString(palabra)
+console.log(resultado) // Imprime: noisrever
+```
+
+> [!TIP]
+> Puedes separar un string o unir un array por sus caracteres si usas el método adecuado con comillas vacías: `""`.
+
+### Iteración
+
+Utiliza el método `forEach` para imprimir en consola los nombres de la siguiente lista de estudiantes
+
+```js
+let estudiantes = [
+  {
+    nombre: "Manuel",
+    edad: 23,
+  },
+  {
+    nombre: "Carolina",
+    edad: 20,
+  },
+  {
+    nombre: "Miguel",
+    edad: 34,
+  },
+  {
+    nombre: "Ana",
+    edad: 34,
+  },
+  {
+    nombre: "Felipe",
+    edad: 18,
+  },
+]
+```
+
+### ¿Existe Maria?
+
+Dado un array de nombres, busca si el nombre `maria` está presente en el array.
+
+```js
+let nombres = ["Ana", "Juan", "María", "Pedro"]
+let existeMaria // acá va el código
+console.log(existeMaria)
+```
+
+### Filtrado y Mapeo:
+
+Dado el siguiente array de números, filtra los números pares y luego el con el array resultante multiplica cada número filtrado por 2.
+
+Imprime en consola el array resultante.
+
+```js
+let numeros = [53, 89, 27, 12, 71, 45, 33, 96, 8, 62]
+
+let numerosFiltrados // aca va el código
+let numerosFiltradosPorDos // aca va el código
+
+console.log(numerosFiltradosPorDos)
+```
+
+### MAYUSCULAS
+
+Dado un array de nombres en minúsculas, imprime cada elemento en mayúsculas.
+
+```js
+let nombres = ["ana", "juan", "maría", "pedro"]
+let nombresEnMayuscula // acá va el código
+```
+
+### Sumatoria 2.0
+
+Dado un array de números, utiliza el método `reduce` para sumar todos los elementos.
+
+```js
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50, 100, 200]
+
+let suma // acá va el código
+console.log(suma)
 ```

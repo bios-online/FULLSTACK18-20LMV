@@ -378,6 +378,19 @@ console.log(resultado)
 // Imprime: { id: 2, nombre: "Mariana" }
 ```
 
+- **findIndex:** Recibe una función como parámetro y retorna la posición del primer elemento del array que cumpla con la condición dada:
+
+```js
+let lista = [
+  { id: 1, nombre: "Gabriel" },
+  { id: 2, nombre: "Mariana" },
+  { id: 3, nombre: "Maria" },
+]
+let resultado = lista.findIndex((elemento) => elemento.nombre === "Mariana")
+console.log(resultado)
+// Imprime: 1
+```
+
 - **filter:** Recibe una función como parámetro y retorna un nuevo array con todos los elementos del array que cumpla con la condición dada:
 
 ```js
@@ -510,7 +523,7 @@ console.log(texto.replace("o", "*")) // Imprime: "H*la Mundo"
 
 ```js
 let texto = "Hola Mundo"
-console.log(texto.replace("o", "*")) // Imprime: "H*la Mund*"
+console.log(texto.replaceAll("o", "*")) // Imprime: "H*la Mund*"
 ```
 
 Existen muchos mas métodos que podemos encontrar en la documentación oficial del lenguaje [MDN Strings](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)

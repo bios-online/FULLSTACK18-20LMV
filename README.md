@@ -4,7 +4,7 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
 
 ## Tabla de Contenido
 
-- Bases
+- Bases JavaScript
   - Teoría
     - Introducción
       - [¿Qué es javascript?](bases/teoria/introduccion/que-es-javascript.md)
@@ -17,3 +17,4 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
     - [Funciones](bases/teoria/funciones/funciones.md)
     - [Ciclos](bases/teoria/ciclos/ciclos.md)
   - [Ejercicios](bases/ejercicios.md)
+  - [Retos](bases/retos.md)

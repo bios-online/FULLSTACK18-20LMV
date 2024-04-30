@@ -1,4 +1,5 @@
 // Agregar a la lista
+const TODO_LIST_KEY = "todoList"
 let todoList = []
 
 function addToList(item) {
@@ -11,6 +12,7 @@ function addToList(item) {
   todoList.push(todoListItem)
 }
 
+// Ver toda mi lista de tareas
 function showTasks(list) {
   try {
     console.log("-".repeat(20))
@@ -48,7 +50,14 @@ function deleteTask(taskId) {
 }
 
 function persistTodoList() {
-  localStorage.setItem("todoList", JSON.stringify(todoList))
+  localStorage.setItem(TODO_LIST_KEY, JSON.stringify(todoList))
+}
+
+function getTodoList() {
+  let storage = localStorage.getItem(TODO_LIST_KEY)
+  if (storage) {
+    todoList = JSON.parse(storage)
+  }
 }
 
 // Marcar como completada una tarea
@@ -71,9 +80,9 @@ function showPendingTasks() {
   let filteredList = todoList.filter((item) => !item.isCheck)
   showTasks(filteredList)
 }
-// ver toda mi lista de tareas
 
 function main() {
+  getTodoList()
   let option
   do {
     let id

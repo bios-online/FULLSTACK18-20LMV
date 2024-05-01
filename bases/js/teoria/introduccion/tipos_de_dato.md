@@ -15,6 +15,13 @@
 - **string**: Son cadenas de caracteres o texto. Siempre deben estar
   envueltos en comillas `""` o comillas simples `''`. Ej: `"Hola mundo"` `"2"` `"A"`
 
+Existe una alternativa que permite integrar variables dentro del string conocida como `literal templates` y se escriben con comillas invertidas (``)
+
+```js
+let variable = "mundo"
+let texto = `Hola ${variable}` // la variable se escribe dentro de ${}
+```
+
 - **numbers**: Son valores numéricos que pueden ser enteros o decimales tanto positivos como negativos.
 
 - **boolean**: Solo puede almacenar 2 valores "si y no" siendo `true` para valores verdaderos y `false` para valores falsos.

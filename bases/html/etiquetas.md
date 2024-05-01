@@ -1,0 +1,74 @@
+# Etiquetas HTML
+
+Las páginas web están formadas por una serie de etiquetas HTML, que dictan cómo se organiza y presenta el contenido en un navegador web.
+
+## Estructura
+
+La estructura básica de una etiqueta HTML incluye varios componentes clave:
+
+1. **La etiqueta de apertura:** Incluye el nombre de la etiqueta encerrado en signos de menor y mayor (`<>`). Este nombre indica el tipo de contenido que la etiqueta representará o cómo debería comportarse en la página web.
+
+2. **Contenido:** Es el contenido dentro de la etiqueta, que puede ser **texto**, **otro HTML**
+
+3. **La etiqueta de cierre:** Incluye el nombre de la etiqueta precedido por una barra inclinada (`</ nombre>`) dentro de signos de menor y mayor. Esto indica el final del elemento.
+
+por ejemplo:
+
+```html
+<p>Hola Mundo</p>
+```
+
+- **Etiqueta de apertura:** `<p>`
+- **Contenido: Hola Mundo**
+- **Etiqueta de cierre:** `</p>`
+
+Existen etiquetas con contenido vacío, es decir, no necesitan una etiqueta de cierre, solo constan de la etiqueta de apertura finalizando con una barra inclinada antes del signo de menor que (`<nombre />`)
+
+por ejemplo:
+
+```html
+<img />
+```
+
+## Atributos
+
+Se utilizan para proporcionar información adicional sobre cómo debe comportarse o mostrarse la etiqueta en una página web.
+
+Los atributos generalmente se colocan dentro de la etiqueta de apertura seguidos del nombre de la etiqueta y separados por un espacio siguiendo la siguiente estructura:
+
+1. **Nombre de Atributo:** Cada atributo tiene un nombre único que define su propósito. Algunos ejemplos comunes incluyen `id`, `class`, `src`, `href`, `alt`, `style`, `title`, entre otros.
+
+2. **Valor de Atributo:** El valor de un atributo especifica información adicional sobre el elemento y puede ser una cadena de texto, un número, una URL, un color, etc. Dependiendo del atributo, el valor puede ser obligatorio o opcional.
+
+Por ejemplo:
+
+```html
+<p id="parrafoPrincipal">Este es mi párrafo principal.</p>
+```
+
+```html
+<img src="imagen.jpg" />
+```
+
+## Etiquetas básicas
+
+Algunas etiquetas básicas de html son:
+
+| Etiqueta HTML                      | Descripción                                             |
+| ---------------------------------- | ------------------------------------------------------- |
+| `<html>`                           | Define el inicio y el final de un documento HTML        |
+| `<head>`                           | Contiene información meta sobre el documento            |
+| `<title>`                          | Define el título del documento                          |
+| `<body>`                           | Contiene el contenido visible de la página              |
+| `<h1>`, `<h2>`, `<h3>`, ... `<h6>` | Encabezados de nivel 1, 2, 3, hasta el 6.               |
+| `<p>`                              | Define un párrafo                                       |
+| `<a>`                              | Define un enlace (hipervínculo)                         |
+| `<img>`                            | Inserta una imagen                                      |
+| `<ul>`, `<ol>`                     | Define listas no ordenadas y ordenadas, respectivamente |
+| `<li>`                             | Define un elemento de lista                             |
+| `<div>`                            | Define una división o contenedor genérico               |
+| `<form>`                           | Define un formulario                                    |
+| `<input>`                          | Define un campo de entrada                              |
+| `<button>`                         | Define un botón                                         |
+
+para conocer todas las etiquetas que existen y su funcionamiento lo podemos encontrar en esta pagina web: [htmlreference.io](https://htmlreference.io)

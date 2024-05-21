@@ -71,4 +71,107 @@ Algunas etiquetas básicas de html son:
 | `<input>`                          | Define un campo de entrada                              |
 | `<button>`                         | Define un botón                                         |
 
+## Etiquetas semánticas
+
+Estas etiquetan describen el propósito y el contenido de una sección de una página ayudando a los motores de búsqueda y a otros dispositivos a entender mejor la estructura y el contenido del sitio:
+
+| Etiqueta    | Descripción                                       |
+| ----------- | ------------------------------------------------- |
+| `<header>`  | Define la cabecera de un documento o sección      |
+| `<nav>`     | Define un conjunto de enlaces de navegación       |
+| `<section>` | Define una sección de un documento                |
+| `<article>` | Define contenido independiente y autónomo         |
+| `<aside>`   | Define contenido relacionado o tangencial         |
+| `<footer>`  | Define el pie de página de un documento o sección |
+| `<main>`    | Define el contenido principal del documento       |
+
 para conocer todas las etiquetas que existen y su funcionamiento lo podemos encontrar en esta pagina web: [htmlreference.io](https://htmlreference.io)
+
+### Etiquetas `<script>` y `<style>` en HTML
+
+Las etiquetas `<script>` y `<style>` en HTML se utilizan para incluir JavaScript y CSS, respectivamente, directamente dentro de un documento HTML:
+
+#### `<script>`
+
+La etiqueta `script` se usa para insertar código JavaScript, que puede manipular elementos HTML, validar datos, interactuar con el servidor etc.
+
+por ejemplo:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de Script</title>
+  </head>
+  <body>
+    <h1 id="titulo">Hola, Mundo!</h1>
+    <button onclick="imprimir()">Haz clic aquí</button>
+
+    <script>
+      function imprimir() {
+        console.log("Hola mundo")
+      }
+    </script>
+  </body>
+</html>
+```
+
+#### `<style>`
+
+La etiqueta `style` se usa para definir estilos CSS internos que se aplican a los elementos HTML.
+
+Por ejemplo:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de Estilo</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      p {
+        color: gray;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hola, Mundo!</h1>
+    <p>Este es un párrafo de ejemplo.</p>
+  </body>
+</html>
+```
+
+Aunque se permite incluir JavaScript y estilos CSS directamente en el HTML no es buena práctica puesto que puede dificultar la lectura y el mantenimiento del código.
+
+Mantener el HTML, CSS y JavaScript en archivos separados facilita la gestión y el entendimiento del código.
+
+La forma profesional para incluir nuestro código y estilos es mediante la lectura de archivos externos. se hace de la siguiente manera:
+
+- **CSS externo:** Coloca los estilos en un archivo `.css` separado y enlázalo en el <head> del documento HTML usando <link rel="stylesheet" href="styles.css">.
+
+- **Archivo JavaScript externo:** Coloca el JavaScript en un archivo `.js` separado y enlázalo al final del <body> del documento HTML usando `<script src="scripts.js"></script>`.
+
+Así se vería un ejemplo incluyendo ambos archivos a un archivo HTML:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo de Separación de Código</title>
+    <!-- Acá enlazo mi archivo de estilos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="titulo">Hola, Mundo!</h1>
+    <!-- Acá enlazo mi archivo JavaScript -->
+    <script src="scripts.js"></script>
+  </body>
+</html>
+```

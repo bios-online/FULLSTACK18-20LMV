@@ -1,0 +1,76 @@
+/* -------------- SELECTORES ----------------- */
+
+p {
+  background-color: cadetblue;
+}
+
+.parrafo {
+  background-color: crimson;
+}
+
+#principal {
+  background-color: chocolate;
+}
+
+/* ------------ CASCADA ------------------- */
+
+.cascada {
+  background-color: aqua;
+}
+
+.cascada {
+  background-color: blueviolet;
+}
+
+/* ------------- EL ORDEN IMPORTA ------------------ */
+
+.clase2 {
+  background-color: green;
+}
+
+.clase1 {
+  color: beige;
+  background-color: blue;
+}
+
+/* --------------- COMBINACION DE SELECTORES ---------------- */
+
+/* Combinación de selectores para mas especificidad */
+p.combinacion1 {
+  color: darkgreen;
+}
+
+/* Combinación de selectores para elementos hijos (TODOS) */
+
+/* .lista li {
+  color: blueviolet;
+  background-color: aqua;
+}
+
+.lista-interna li {
+  background-color: chartreuse;
+} */
+
+/* Combinación de selectores para elementos hijos directos */
+
+.lista-interna li {
+  background-color: chartreuse;
+}
+
+.lista > li {
+  color: blueviolet;
+  background-color: aqua;
+}
+
+/* Combinación de selectores para elementos hermanos */
+
+.titulo ~ p {
+  background-color: beige;
+  color: brown;
+}
+
+/* Combinación de selectores para elemento hermano inmediato */
+
+.titulo + p {
+  background-color: blue;
+}

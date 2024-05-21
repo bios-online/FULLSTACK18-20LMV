@@ -1,0 +1,11 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.caja {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+}

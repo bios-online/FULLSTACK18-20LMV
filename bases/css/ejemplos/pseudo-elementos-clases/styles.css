@@ -1,0 +1,37 @@
+.caja {
+  width: calc(10vh + 3);
+  height: 100px;
+  background-color: chocolate;
+  transition: all 0.5s;
+}
+
+.caja:hover {
+  background-color: blueviolet;
+  transform: scale(1.2);
+  transition: all 1s;
+}
+
+#bodega .caja:last-child {
+  background-color: #7fffd4;
+}
+
+#bodega .caja:first-child {
+  background-color: chartreuse;
+}
+
+#bodega .caja:nth-child(even) {
+  background-color: blue;
+}
+
+.input:focus {
+  border: 1px dashed black;
+}
+
+.pseudo-elemento::first-letter {
+  background-color: yellow;
+}
+
+.resaltar::selection {
+  background-color: darkmagenta;
+  color: white;
+}

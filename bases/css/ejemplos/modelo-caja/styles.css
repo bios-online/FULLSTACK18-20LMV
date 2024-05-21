@@ -1,0 +1,70 @@
+/* --------------- MODELO DE CAJA ---------------- */
+
+.caja {
+  width: 200px;
+  height: 50px;
+  background-color: darkslateblue;
+}
+
+.caja.borde {
+  border: 3px solid black;
+
+  border-width: 50px;
+  border-width: 2px 4px 8px 16px;
+  border-width: 4px 4px;
+
+  /* border-top-width: 10px;
+    border-right-width: 20px;
+    border-bottom-width: 1px;
+    border-left-width: 100px; */
+
+  border-style: double;
+
+  border-right-style: groove;
+  border-top-style: dotted;
+  border-bottom-style: dashed;
+
+  border-color: black;
+
+  border-left-color: red;
+}
+
+.caja.padding {
+  padding: 30px;
+  padding-top: 2px;
+  padding-right: 4px;
+
+  padding: 20px 30px;
+}
+
+.caja.margin {
+  margin: 30px;
+  margin-top: 2px;
+  margin-right: 4px;
+
+  margin: 20px 30px;
+}
+
+.bloque {
+  display: block;
+}
+
+.en-linea {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* ---------- MODO --------- */
+
+.border-box {
+  box-sizing: border-box;
+
+  /* box-sizing: content-box; */
+}
+
+/* * {
+  box-sizing: border-box;
+} */

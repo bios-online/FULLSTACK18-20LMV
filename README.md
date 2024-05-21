@@ -22,3 +22,7 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
     - [¿Qué es HTML](bases/html/que-es-html.md)
     - [Etiquetas](bases/html/etiquetas.md)
     - [Estructura](bases/html/estructura.md)
+  - Teoría CSS
+    - [¿Que es CSS](bases/css/que-es-css.md)
+    - [Valores](bases/css/valores.md)
+    - [Modelo de caja](bases/css/modelo-de-caja.md)

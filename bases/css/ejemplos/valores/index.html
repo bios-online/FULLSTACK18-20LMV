@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valores</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Con medidas en px</h1>
+    <div>
+      <h1>Hola mundo <span class="px">H1</span></h1>
+      <h2>Hola mundo <span class="px">H2</span></h2>
+      <h3>Hola mundo <span class="px">H3</span></h3>
+      <h4>Hola mundo <span class="px">H4</span></h4>
+      <h5>Hola mundo <span class="px">H5</span></h5>
+      <h6>Hola mundo <span class="px">H6</span></h6>
+    </div>
+    <h1 class="title">
+      Con medidas em - (depende de font-size de si mismo o su padre)
+    </h1>
+    <div>
+      <h1>Hola mundo <span class="em">H1</span></h1>
+      <h2>Hola mundo <span class="em">H2</span></h2>
+      <h3>Hola mundo <span class="em">H3</span></h3>
+      <h4>Hola mundo <span class="em">H4</span></h4>
+      <h5>Hola mundo <span class="em">H5</span></h5>
+      <h6>Hola mundo <span class="em">H6</span></h6>
+    </div>
+    <h1 class="title">Con medidas rem - (depende de font-size body)</h1>
+    <div>
+      <h1>Hola mundo <span class="rem">H1</span></h1>
+      <h2>Hola mundo <span class="rem">H2</span></h2>
+      <h3>Hola mundo <span class="rem">H3</span></h3>
+      <h4>Hola mundo <span class="rem">H4</span></h4>
+      <h5>Hola mundo <span class="rem">H5</span></h5>
+      <h6>Hola mundo <span class="rem">H6</span></h6>
+    </div>
+
+    <h1 class="title">medidas px, em, rem, %</h1>
+
+    <div class="caja-padre">
+      <h4 class="title">caja px</h4>
+      <div class="caja"></div>
+      <h4 class="title">caja em</h4>
+      <div class="caja-em"></div>
+      <h4 class="title">caja rem</h4>
+      <div class="caja-rem"></div>
+      <h4 class="title">caja normal con contenido</h4>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          repellendus voluptas, unde dignissimos accusantium velit atque
+          consequuntur soluta, repellat adipisci quibusdam commodi, libero amet
+          illum similique laboriosam fugit hic magni.
+        </p>
+      </div>
+      <h4 class="title">caja % sin contenido</h4>
+      <div class="caja-porcentaje"></div>
+      <h4 class="title">caja % con contenido</h4>
+      <div class="caja-porcentaje">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          repellendus voluptas, unde dignissimos accusantium velit atque
+          consequuntur soluta, repellat adipisci quibusdam commodi, libero amet
+          illum similique laboriosam fugit hic magni.
+        </p>
+      </div>
+    </div>
+
+    <h4 class="title">el % depende de el tamaño del padre</h4>
+    <div class="caja">
+      <div class="caja-porcentaje">50%</div>
+    </div>
+
+    <h4 class="title">caja viewport (vh, vw)</h4>
+    <div class="caja-viewport">10% de la pantalla en w y h</div>
+    <hr />
+    <h1 class="title">Colores (texto, background, borde)</h1>
+    <div class="caja color">
+      <p>hola mundo</p>
+    </div>
+    <hr />
+    <div class="dimensiones y-overflow">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+        distinctio expedita eligendi labore eum deleniti molestias accusantium
+        adipisci ea hic cupiditate dolorem a voluptas excepturi repudiandae
+        voluptatem, deserunt quisquam. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Suscipit eveniet ipsa aliquid saepe pariatur amet.
+        Consequatur facere, quisquam laboriosam soluta obcaecati, unde, libero
+        laborum perferendis deserunt debitis nemo porro corrupti.
+      </p>
+    </div>
+    <hr />
+    <div class="x-overflow">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+      </p>
+    </div>
+    <hr />
+    <div class="dimensiones">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+        distinctio expedita eligendi labore eum deleniti molestias accusantium
+        adipisci ea hic cupiditate dolorem a voluptas excepturi repudiandae
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de caja</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h3>Caja</h3>
+    <div class="caja"></div>
+    <hr />
+    <h3>Caja con borde</h3>
+    <div class="caja borde">
+      <p>Practiquemos el modelo de caja <span>Soy un span</span></p>
+    </div>
+    <hr />
+    <h3>Caja con padding</h3>
+    <div class="caja padding">
+      <p>Practiquemos el modelo de caja <span>Soy un span</span></p>
+    </div>
+    <hr />
+    <h3>Caja con margin</h3>
+    <div class="caja margin">
+      <p>Practiquemos el modelo de caja <span>Soy un span</span></p>
+    </div>
+    <hr />
+    <h3>Caja con todos los elementos</h3>
+    <div class="caja borde padding margin">
+      <p>Practiquemos el modelo de caja <span>Soy un span</span></p>
+    </div>
+    <hr />
+    <h3>Elemento por defecto block con display-block</h3>
+    <div class="caja inline-block borde padding margin">
+      <p>Practiquemos el model de caja</p>
+    </div>
+    <h3>Elemento por defecto block con display en linea</h3>
+    <div class="caja en-linea borde padding margin">
+      Practiquemos el model de caja
+    </div>
+    <hr />
+    <h3>Elemento por defecto en linea con display block</h3>
+    <a class="" href="">Ejemplo en linea</a>
+    <a class="caja bloque" href="">Ejemplo en linea</a>
+
+    <h2>Calculo de medidas</h2>
+    <div class="caja borde padding margin"></div>
+    <div class="caja borde padding margin border-box"></div>
+  </body>
+</html>

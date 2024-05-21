@@ -1,0 +1,51 @@
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: darkcyan;
+  border: 1px dashed black;
+}
+
+.estatico {
+  position: static;
+}
+
+.relativo {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  right: 20px;
+  bottom: 40px;
+}
+
+.absoluta {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: brown;
+}
+
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 100px;
+  background-color: darkgoldenrod;
+  z-index: 1;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.mover-texto {
+  position: absolute;
+  top: -45px;
+  left: 13px;
+  background-color: chocolate;
+  color: bisque;
+}
+
+.rel {
+  position: relative;
+}

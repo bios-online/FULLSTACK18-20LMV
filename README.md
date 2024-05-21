@@ -26,3 +26,4 @@ Repositorio de trabajo para las clases del grupo FullStack los Lunes, Miércoles
     - [¿Que es CSS](bases/css/que-es-css.md)
     - [Valores](bases/css/valores.md)
     - [Modelo de caja](bases/css/modelo-de-caja.md)
+  - [Ejercicios HTML y CSS](bases/ejercios-html-css.md)

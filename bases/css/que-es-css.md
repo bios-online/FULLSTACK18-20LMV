@@ -115,3 +115,5 @@ Los atributos mas relevantes son:
 | `overflow`         | Define cómo se gestiona el contenido desbordante dentro del elemento            | `overflow: hidden;`               |
 | `visibility`       | Define si el elemento es visible o no                                           | `visibility: hidden;`             |
 | `cursor`           | Define el tipo de cursor que se muestra cuando el cursor está sobre el elemento | `cursor: pointer;`                |
+
+para conocer todos los atributos que existen y su funcionamiento lo podemos encontrar en esta pagina web: [cssreference.io](https://cssreference.io)
